@@ -3,21 +3,46 @@
     margin: 0%;
 }
 .container {
-    background-color: #F2F2F2;
+    background-color: #D4D0CD;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.container h1{
+    position: absolute;
+    color: #14402B;
+    opacity: 0.5;
+    font-size: 250px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    left: 100px;
+    bottom: 50px;
+}
+.tip{
+    position: absolute;
+    color: black;
+    opacity: 0.5;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    left: 100px;
+    top: 100px;
 }
 .card{
     width: 450px;
     height: 600px;
     position: relative;
+    left: 20%;
     transform-style: preserve-3d;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    transition: transform .5s ease;
     perspective: 1000px;
+}
+.card:hover{
+    cursor: pointer;
 }
 .card.flip{
     transform: rotateY(180deg);
@@ -43,44 +68,35 @@
     width: 100%;
     border-radius: 10%;
     border: 5px solid #14402B;
-    background-color: #008CBA;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .text{
-    color: white;
+    position: relative;
+    color: #14402B;
     font-size: 30px;
     font-weight: bold;
+    top: 150px;
 }
 .card-front:hover .overlay{
     opacity: 1;
 }
 
 .card-front img{
+    position: relative;
+    top: -50px;
     width: 300px;
     border-radius: 50%;
 }
 .card-back{
     transform: rotateY(180deg);
-    background-color: greenyellow;
+    background-color: #D4D0CD;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 30px;
+    line-height: 2;
 }
 
-.btn{
-    background-color: #14402B;
-    margin-top: 50px;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color .5s ease;
-}
-.btn:hover{
-    background-color: #008CBA;
-}
