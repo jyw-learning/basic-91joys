@@ -8,11 +8,67 @@
   </head>
   <body>
     <div class="container">
-      <h1>91joys 的網頁設計課作業</h1>
-      <div class="menu">
-        <a href="week1/index.html">第一週作業2.26</a>
-        <a href="week2/index.html">第二週作業3.05</a>
+      <div class="title"><span class="text">Hi, I'm Joys.</span></div>
+      <div class="aboutme">
+        <span>我是中原大學的學生</span>
+        <span>目前就讀電機系</span>
+        <span>喜歡寫程式</span>
+        <span>這裡是我的網頁設計作業</span>
+      </div>
+      <div class="slide-container">
+        <div class="card-wrap">
+          <div class="card" onclick="location.href='week1/index.html'">
+            <img src="/image/翻轉卡片.png" alt="翻轉卡片" />
+            <div class="card-content">
+              <div class="name">作品名稱:翻轉卡片</div>
+              <div class="discripe">
+                這是一個具有懸浮與翻轉效果的卡片，滑鼠懸停顯示文字，點擊後翻轉。我使用
+                CSS hover 處理懸浮效果，並透過 JavaScript classList.toggle 切換
+                flip 類別來實現翻轉動畫。
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="location.href='week2/index.html'">
+            <img src="/image/todolist.png" alt="todolist" />
+            <div class="card-content">
+              <div class="name">作品名稱:課程To-do-list</div>
+              <div class="discripe">
+                這是一個簡單的 To-Do List，使用 JavaScript
+                來實現新增與刪除任務的功能。
+              </div>
+            </div>
+          </div>
+          <!-- <div class="card">
+            <img src="https://picsum.photos/300/400/?random=10" />
+            <div class="card-content">
+              <div class="name">作品名稱:</div>
+              <div class="discripe">簡單介紹:</div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/300/400/?random=9" />
+            <div class="card-content">
+              <div class="name">作品名稱:</div>
+              <div class="discripe">簡單介紹:</div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/300/400/?random=8" />
+            <div class="card-content">
+              <div class="name">作品名稱:</div>
+              <div class="discripe">簡單介紹:</div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/300/400/?random=7" />
+            <div class="card-content">
+              <div class="name">作品名稱:</div>
+              <div class="discripe">簡單介紹:</div>
+            </div>
+          </div> -->
+        </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
