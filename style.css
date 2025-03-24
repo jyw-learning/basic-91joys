@@ -117,7 +117,7 @@ body {
   border: 1px solid #f5f0cd;
   box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.2);
   width: 334px;
-  transition: transform 0.7s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .card:hover {
   transform: scale(1.1);
